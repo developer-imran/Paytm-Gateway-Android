@@ -5,6 +5,7 @@ PAYTM PAYMENT GATEWAY
 Just follow these steps
 
 1) Get the credentials from Paytm developers site.
+https://developer.paytm.com/docs/
 
 2) place the paytm web services folder in to Local host web directory or web server.
 
