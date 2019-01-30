@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    android:orientation="vertical"
+    android:padding="40dp">
+
+    <LinearLayout
+        android:id="@+id/form_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form_group_shape"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edttxt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sample_edit_text_default_height"
+            android:autofillHints="number"
+            android:background="@android:color/transparent"
+            android:hint="Enter Your Paytm Number"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="10"
+            android:paddingLeft="@dimen/sample_edit_text_padding_horizontal"
+            android:paddingRight="@dimen/sample_edit_text_padding_horizontal"
+            android:textSize="@dimen/sample_edit_text_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sample_form_group_separator_height"
+            android:background="@android:color/darker_gray" />
+
+
+        <EditText
+            android:id="@+id/edttxt2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sample_edit_text_default_height"
+            android:autofillHints="amount"
+            android:background="@android:color/transparent"
+            android:hint="Donation Amount"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:paddingLeft="@dimen/sample_edit_text_padding_horizontal"
+            android:paddingRight="@dimen/sample_edit_text_padding_horizontal"
+            android:textSize="@dimen/sample_edit_text_size" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnPay"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/capsule_btn"
+        android:gravity="center"
+        android:text="Proceed"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</LinearLayout>
